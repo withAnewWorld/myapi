@@ -6,7 +6,7 @@ from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import jwt, JWTError
 from sqlalchemy.orm import Session
 from starlette import status
-from starlette import Config
+from starlette.config import Config
 
 from database import get_db
 from domain.user import user_crud, user_schema
